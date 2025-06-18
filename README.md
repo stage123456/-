@@ -139,6 +139,9 @@ model_tfidf = train_classifier(features_tfidf, labels)
        words = get_words(filename)
        if mode == 'high_freq':
            current_vector = np.array(tuple(map(lambda word: words.count(word), top_words)))
+
+   ---
+<img src="https://github.com/lzy-pan/GitDemo/blob/master/%E5%9B%BE%E7%89%87/photo.png" width="200" alt="截图">
        else:
            current_vector = get_tfidf_features([' '.join(words)], max_features=len(top_words))
        return '垃圾邮件' if model.predict(current_vector.reshape(1, -1)) == 1 else '普通邮件'
