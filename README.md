@@ -144,4 +144,4 @@ model_tfidf = train_classifier(features_tfidf, labels)
        return '垃圾邮件' if model.predict(current_vector.reshape(1, -1)) == 1 else '普通邮件'
    ```
    ---
-<img src="https://github.com/lzy-pan/GitDemo/blob/master/%E5%9B%BE%E7%89%87/photo.png" width="200" alt="截图">
+<img src="https://github.com/stage123456/-/blob/main/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-06-19%20014011.png" width="200" alt="截图">
